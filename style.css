@@ -1,0 +1,50 @@
+.navbar-brand{
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+}
+
+.btn-light{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar{
+    border-bottom: 1px solid lightgray;
+}
+
+.margen{
+    margin-top: 70px;
+}
+
+.seg-ter{
+    margin-top: 5px;
+}
+
+.card{
+    margin: 40px auto;
+    width: 600px;
+}
+
+.card-header{
+    padding: .75rem 15px;
+}
+
+.titulo{
+    display: inline-block;
+}
+
+.btn-link{
+    float: right;
+    color: gray;
+    padding-right: 0px;
+}
+
+.card-body{
+    padding: 15px;
+}
+
+.comentario{
+    color: #CDCCCC;
+    display: inline-block;
+    width: 88%;
+}

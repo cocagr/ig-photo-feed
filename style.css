@@ -1,49 +1,49 @@
-.navbar-brand{
+.navbar-brand {
     font-family: 'Oleo Script', cursive;
     font-size: 25px;
 }
 
-.btn-light{
+.btn-light {
     background-color: #ffffff;
     color: #000000;
 }
 
-.navbar{
+.navbar {
     border-bottom: 1px solid lightgray;
 }
 
-.margen{
+.margen {
     margin-top: 70px;
 }
 
-.seg-ter{
+.seg-ter {
     margin-top: 5px;
 }
 
-.card{
+.card {
     margin: 40px auto;
     width: 600px;
 }
 
-.card-header{
+.card-header {
     padding: .75rem 15px;
 }
 
-.titulo{
+.titulo {
     display: inline-block;
 }
 
-.btn-link{
+.btn-link {
     float: right;
     color: gray;
     padding-right: 0px;
 }
 
-.card-body{
+.card-body {
     padding: 15px;
 }
 
-.comentario{
+.comentario {
     color: #CDCCCC;
     display: inline-block;
     width: 88%;

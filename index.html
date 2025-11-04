@@ -15,7 +15,8 @@
 
 <body>
 
-    <nav class="navbar fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light">
+
         <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i>Instagram</span>
         <form class="form-inline">
             <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success" type="button">Create a new
@@ -36,37 +37,65 @@
         </form>
     </nav>
 
-    <nav aria-label="Page navigation example" class="margen" role="navigation">
-        <ul class="pagination justify-content-center nav nav-pills mb-3 mt-3" id="myPills" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                    aria-selected="true">
-                    <i class="fas fa-th"></i>
-                </a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                    aria-controls="profile" aria-selected="false">■</a>
-            </li>
-        </ul>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="fas fa-th"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"
+                disabled>Disabled</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">...</div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...
+        </div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+            ...</div>
+    </div>
+
+    <nav>
+
+        <div class="justify-content-center nav nav-pills mb-3 mt-3" id="myPills" role="tablist">
+            <button class="nav-link active" id="home-tab" data-toggle="tab" data-bs-target="#home" role="tab"
+                aria-controls="home" aria-selected="true">
+
+            </button>
+            <button class="nav-link" id="profile-tab" data-toggle="tab" data-bs-target="#profile" role="tab"
+                aria-controls="profile" aria-selected="false">■</button>
+        </div>
     </nav>
 
     <div class="tab-content">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-pill" tabindex="0">
             <div class="container-fluid tab-content">
                 <div class="row g-1">
-                    <div class="col px-0 ml-1">
+                    <div class="col ">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover"
                                 src="https://preview.redd.it/thoughts-on-madara-uchiha-v0-r0gns8ufkz1c1.jpeg?auto=webp&s=646f45a81136b22b8244009a4ae20a4acc8587f7">
                         </div>
                     </div>
-                    <div class="col px-0">
+                    <div class="col">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover" src="https://picsum.photos/id/1001/445/180">
                         </div>
                     </div>
-                    <div class="col px-0">
+                    <div class="col">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover" src="https://picsum.photos/id/1005/445/180">
                         </div>
@@ -75,17 +104,17 @@
             </div>
             <div class="container-fluid seg-ter">
                 <div class="row">
-                    <div class="col px-0 ml-1">
+                    <div class="col">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover" src="https://picsum.photos/id/1002/445/180">
                         </div>
                     </div>
-                    <div class="col px-0">
+                    <div class="col">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover" src="https://picsum.photos/id/1008/445/180">
                         </div>
                     </div>
-                    <div class="col px-0">
+                    <div class="col">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover" src="https://picsum.photos/id/1009/445/180">
                         </div>
@@ -94,17 +123,17 @@
             </div>
             <div class="container-fluid seg-ter">
                 <div class="row">
-                    <div class="col px-0 ml-1">
+                    <div class="col">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover" src="https://picsum.photos/id/1006/445/180">
                         </div>
                     </div>
-                    <div class="col px-0">
+                    <div class="col">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover" src="https://picsum.photos/id/1003/445/180">
                         </div>
                     </div>
-                    <div class="col px-0">
+                    <div class="col">
                         <div class="ratio ratio-1x1">
                             <img class="object-fit-cover" src="https://picsum.photos/id/1045/445/180">
                         </div>
@@ -223,12 +252,6 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
